@@ -6,18 +6,20 @@ body{
 .mainContainer{
   display: flex;
   gap:20px;
-  padding-top: 50px;
   padding: 50px;
-  max-width: 3200px;
-  margin: 0 auto;
+  padding-left: 0px;
+  padding-right: 0px;
+  max-width: 2000px;
+  margin: 0 50px;
+  align-items: flex-start;
 }
 
 h2{
   text-align: left;
-  padding-left: 20px;
   font-size: 1rem;
   margin-bottom: 15px;
   color: #333;
+  padding-left: 5px;
 }
 
 .filters{
@@ -29,8 +31,6 @@ h2{
 .filterLeft,.filterRight{
   width: 100%;
   box-sizing: border-box;
-  background-color: #ffffff; 
-  padding: 15px;             
   margin-bottom: 20px;
   display: flex;     
   gap: 20px;
@@ -63,29 +63,27 @@ select {
   flex-direction: column;
   flex: 1;
   display: flex;
-  min-width: 0;
 }
 
 .todoList{
   width: 100%;
   box-sizing: border-box;
-  list-style: none;
-  padding: 0;
   background-color: white;
   border-radius: 8px;
   border: 1px solid #e0e0e0;
   padding: 10px;
   list-style: none;
+  margin-top: 0px;
 }
 
 .listItem{
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 15px;
-  padding-left: 30px;
+  padding-left: 15px;
+  font-size: 14px;
+  flex-wrap: wrap;
 }
-
 
 .submitButton{
   background-color: #13f1ab;
@@ -118,4 +116,8 @@ select {
   color: #00ce9b;
   font-size: 0.8rem;
   margin: 5px 0 0 0;
+  order: 2;
+  flex-basis: 100%;
+  text-align: left;
+  margin-top: 1px;
 }

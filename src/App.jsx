@@ -7,8 +7,11 @@ function App() {
         <div className="filterLeft">
           <label>Filter by:
           <select className="Filter by:">
+            <option>Name</option>
             <option>Ekaterina</option>
-            <option>Bret</option>
+            <option>Amanda</option>
+            <option>Hristo</option>
+            <option>Nadq</option>
           </select>
           </label>
           <label>Sort:
@@ -27,6 +30,9 @@ function App() {
           <li className="listItem">Някакъв текс
           <button className="submitButton">Complete</button>
           </li>
+          <li className="listItem">Някакъв текс
+          <button className="submitButton">Complete</button>
+          </li>
         </div>
       </div>
 
@@ -34,6 +40,7 @@ function App() {
         <div className="filterRight">
           <label>Sort:
           <select className="sortCompleted">
+            <option>Date (asc)</option>
             <option>Title (asc)</option>
             <option>Title (desc)</option>
           </select>
