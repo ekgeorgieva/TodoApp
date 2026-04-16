@@ -4,22 +4,45 @@ function App() {
   return (
     <div className="mainContainer">
       <div className="pending">
-        <select className="Filter by:">
-          <option>Ekaterina</option>
-          <option>Bret</option>
-        </select>
-        <select className="sort">
-          <option>Title (asc)</option>
-          <option>Title (desc)</option>
-        </select>
+        <div className="filterLeft">
+          <label>Filter by:</label>
+          <select className="Filter by:">
+            <option>Ekaterina</option>
+            <option>Bret</option>
+          </select>
+          <label>Sort:</label>
+          <select className="sort">
+            <option>Title (asc)</option>
+            <option>Title (desc)</option>
+          </select>
+        </div>
         <h2>Pending:</h2>
+        <div className="todoList">
+          <li className="listItem">Някакъв текс
+          <button className="submit">Complete</button>
+          </li>
+          <li className="listItem">Някакъв текс
+          <button className="submit">Complete</button>
+          </li>
+        </div>
       </div>
+
       <div className="completed">
-      <select className="sortCompleted">
-          <option>Title (asc)</option>
-          <option>Title (desc)</option>
-        </select>
+        <div className="filtersRight">
+          <label>Sort:</label>
+          <select className="sortCompleted">
+            <option>Title (asc)</option>
+            <option>Title (desc)</option>
+          </select>
+        </div>
+
         <h2>Completed:</h2>
+        <ul className="todoList">
+          <li className="listItem">Completed ToDo
+          <p className="completedDate">Completed on: 25.04.2026</p>
+          <button className="undo">Undo</button>
+          </li>
+        </ul>
       </div>
     </div>
   );
