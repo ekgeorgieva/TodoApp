@@ -10,6 +10,7 @@ function App() {
   const [sortOrder, setSortOrder] = useState("asc"); 
   const [completedSort, setCompletedSort] = useState("asc"); 
   const [visibleCount, setVisibleCount] = useState(10);
+  const [visibleComplet, setVisibleComplet] = useState(10);
 
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/users")
@@ -98,14 +99,17 @@ function App() {
         
         <div className="todoList">
           <h2>Pending: ({pendingList.length})</h2>
-          {pendingList.map((todo) => (
+          {pendingList.slice(0, visibleCount).map((todo) => (
             <li key={todo.id} className="listItem">
               {todo.title}
-              <button className="submitButton" onClick={() => toggleTodoStatus(todo.id)}>
-                Complete
-              </button>
+              <button className="submitButton" onClick={() => toggleTodoStatus(todo.id)}>Complete</button>
             </li>
           ))}
+          {visibleCount < pendingList.length && (
+            <button className="loadMoreButton"onClick={() => setVisibleCount(prev => prev + 10)}>Load More...</button>
+          )}
+        </div>
+        {/*
           {/* <li className="listItem">Някакъв текс
           <button className="submitButton">Complete</button>
           </li>
@@ -115,15 +119,15 @@ function App() {
           <li className="listItem">Някакъв текс
           <button className="submitButton">Complete</button>
           </li> */}
-        </div>
+        {/* </div> */}
       </div>
 
       <div className="completed">
         <div className="filterRight">
           <label>Sort:
           <select onChange={(e) => setCompletedSort(e.target.value === "Oldest first" ? "asc" : "desc")}>
-              <option>Last</option>
               <option>Oldest</option>
+              <option>Latest</option>
             </select>
           {/* <select className="sortCompleted">
             <option>Date (asc)</option>
@@ -135,7 +139,7 @@ function App() {
 
         <ul className="todoList">
           <h2>Completed: ({completedList.length})</h2>
-          {completedList.map((todo) => (
+          {completedList.slice(0, visibleComplet).map((todo) => (
             <li key={todo.id} className="listItem">
               <div className="itemTextWrapper">
                 <span>{todo.title}</span>
@@ -143,18 +147,16 @@ function App() {
                   Completed on: {new Date(todo.completedAt).toLocaleString("bg-BG")}
                 </p>
               </div>
-              <button className="undoButton" onClick={() => toggleTodoStatus(todo.id)}>
-                Undo
-              </button>
+              <button className="undoButton" onClick={() => toggleTodoStatus(todo.id)}>Undo</button>
             </li>
           ))}
+          {visibleComplet < completedList.length && (
+            <button className="loadMoreButtonC" onClick={() => setVisibleComplet(prev => prev + 10)}>Load More...</button>
+          )}
         </ul>
       </div>
     </div>
   );
 }
-
-
-
 
 export default App;

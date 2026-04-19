@@ -36,7 +36,7 @@ h2{
   flex-direction: row;           
   align-items: flex-start;
   flex-wrap: wrap;
-  
+  box-shadow:#666;
 }
 select {
   padding: 8px;
@@ -138,7 +138,7 @@ select {
 }
 
 .completedDate{
-  color:rgb(48, 190, 48);;
+  color:rgb(48, 190, 48);
   font-size: 0.8rem;
   margin: 5px 0 0 0;
   order: 2;
@@ -151,4 +151,41 @@ select {
   flex: 1;
   display: flex;
   flex-direction: column;
+}
+
+.loadMoreButton {
+  background-color: transparent;
+  border: 2px solid rgb(48, 190, 48);
+  color: rgb(48, 190, 48);
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 20px auto;
+  display: block; 
+  transition: all 0.3s ease;
+}
+
+.loadMoreButton:hover {
+  color: white;
+  transform: scale(1.05);
+  color: rgb(48, 190, 48);;
+}
+
+.loadMoreButtonC{
+  background-color: transparent;
+  border: 2px solid #e4aa16;
+  color: #e4aa16;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 20px auto;
+  display: block; 
+  transition: all 0.3s ease;
+}
+
+.loadMoreButtonC:hover {
+  transform: scale(1.05);
+  color: #e4aa16;
 }
