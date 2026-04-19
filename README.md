@@ -10,8 +10,13 @@
 
 # Инсталация
 1. git clone https://github.com/ekgeorgieva/TodoApp
-2. npm install
+2. cd todoAPP
+3. npm install
+
+# Отваряне на кода
+- code .
 
 # Стартиране на приложението
-npm run dev
+- npm run dev
+
 След стартиране отворете адреса изписан в терминала (http://localhost:5173/) , за да видите приложението. 
