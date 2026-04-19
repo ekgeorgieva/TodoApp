@@ -40,14 +40,23 @@ h2{
 }
 select {
   padding: 8px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
+  border-radius: 13px;
+  border: 1px solid #c0e8f6;
   min-width: 150px;
   cursor: pointer;
+  background-color: #ffffff;
+  backdrop-filter: blur(10px);
 }
+
 .filterLeft select, .filterRight select {
   display: block;   
-  margin-bottom: 10px;       
+  margin-bottom: 10px;    
+}
+
+.filterLeft select:hover, .filterRight select:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+  cursor: pointer;      
 }
 
 .filterLeft label, .filterRight label {
@@ -85,13 +94,21 @@ select {
 }
 
 .submitButton{
-  background-color: #13f1ab;
+  background-color: rgb(48, 190, 48);;
   color: white;
   border: none;
   padding: 8px 15px;
   border-radius: 4px;
   cursor: pointer;
   height: 30px;
+}
+
+.submitButton:hover{
+  background-color: rgb(7, 134, 7);
+  /* border: 1px solid rgb(0, 55, 0); */
+  transform: scale(1.05);
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 /* #root > div > div.completed > ul > li > button{
@@ -113,13 +130,25 @@ select {
   width: 80px;
   height: 30px;
 }
+.undoButton:hover{
+  background-color: #e4aa16;
+  transform: scale(1.05);
+  transition: 0.3s;
+  cursor: pointer;
+}
 
 .completedDate{
-  color: #00ce9b;
+  color:rgb(48, 190, 48);;
   font-size: 0.8rem;
   margin: 5px 0 0 0;
   order: 2;
   flex-basis: 100%;
   text-align: left;
   margin-top: 1px;
+}
+
+.itemTextWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }

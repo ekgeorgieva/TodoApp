@@ -138,7 +138,7 @@ function App() {
           <h2>Completed:({completedList.length})</h2>
           {completedList.map((todo) => (
             <li key={todo.id} className="listItem">
-              <div style={{ flex: 1, display: "flex", flexDirection: "column" }}>
+              <div className="itemTextWrapper">
                 <span>{todo.title}</span>
                 <p className="completedDate">
                   Completed on: {new Date(todo.completedAt).toLocaleString("bg-BG")}
