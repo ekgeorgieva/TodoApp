@@ -2,18 +2,22 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+# Screenshots
+![App Screenshot](./public/Images/1.png)
+![App Screenshot](./public/Images/2.png)
 
-## React Compiler
+# Prerequisites
+Трябва да имате инсталирано следното:
+- Node.js: Версия 14.x или по-нова (препоръчително LTS версия).
+- npm: Обикновено идва заедно с инсталацията на Node.js.
+- Браузър: Google Chrome, Firefox или друг съвременен браузър.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# Инсталация
+1. git clone 
+2. cd todoApp
+3. npm install
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-
-
-![App Screenshot](./Pictures/Screenshots/1.png)
+# Стартиране на приложението
+npm run dev
+След стартиране отворете адреса изписан в терминала (http://localhost:5173/) , за да видите приложението. 
