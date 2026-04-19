@@ -1,6 +1,6 @@
 body{
   width: 100%;
-  background-color: white;
+  background-color: rgb(224, 249, 255);
   font-family: Arial, sans-serif;
 }
 .mainContainer{
@@ -13,7 +13,6 @@ body{
   margin: 0 50px;
   align-items: flex-start;
 }
-
 h2{
   text-align: left;
   font-size: 1rem;
@@ -92,6 +91,7 @@ select {
   padding: 8px 15px;
   border-radius: 4px;
   cursor: pointer;
+  height: 30px;
 }
 
 /* #root > div > div.completed > ul > li > button{
@@ -110,6 +110,8 @@ select {
   padding: 8px 15px;
   border-radius: 4px;
   cursor: pointer;
+  width: 80px;
+  height: 30px;
 }
 
 .completedDate{
