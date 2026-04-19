@@ -9,8 +9,7 @@ function App() {
   const [selectedUser, setUserSelect] = useState("");
   const [sortOrder, setSortOrder] = useState("asc"); 
   const [completedSort, setCompletedSort] = useState("asc"); 
-
-
+  const [visibleCount, setVisibleCount] = useState(10);
 
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/users")
