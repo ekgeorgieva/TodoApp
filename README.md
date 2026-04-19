@@ -9,9 +9,8 @@
 - Браузър: Google Chrome, Firefox или друг браузър.
 
 # Инсталация
-1. git clone 
-2. cd todoApp
-3. npm install
+1. git clone https://github.com/ekgeorgieva/TodoApp
+2. npm install
 
 # Стартиране на приложението
 npm run dev
