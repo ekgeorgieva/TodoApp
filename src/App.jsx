@@ -123,8 +123,8 @@ function App() {
         <div className="filterRight">
           <label>Sort:
           <select onChange={(e) => setCompletedSort(e.target.value === "Oldest first" ? "asc" : "desc")}>
-              <option>Newest first</option>
-              <option>Oldest first</option>
+              <option>Last</option>
+              <option>Oldest</option>
             </select>
           {/* <select className="sortCompleted">
             <option>Date (asc)</option>
@@ -135,7 +135,7 @@ function App() {
         </div>
 
         <ul className="todoList">
-          <h2>Completed:({completedList.length})</h2>
+          <h2>Completed: ({completedList.length})</h2>
           {completedList.map((todo) => (
             <li key={todo.id} className="listItem">
               <div className="itemTextWrapper">
