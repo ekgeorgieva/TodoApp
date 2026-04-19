@@ -82,7 +82,7 @@ select {
   padding: 15px;
   padding-left: 15px;
   font-size: 14px;
-  flex-wrap: wrap;
+  text-align: left;
 }
 
 .submitButton{
